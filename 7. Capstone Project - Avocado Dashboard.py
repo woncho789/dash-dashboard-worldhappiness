@@ -39,4 +39,4 @@ def update_graph(selected_geography):
 
 # Step 5: Running the dashboard
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(host='127.0.0.1', port=3000, debug=True)
