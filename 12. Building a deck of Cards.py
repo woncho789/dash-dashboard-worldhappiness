@@ -11,7 +11,7 @@ soccer = pd.read_csv('./project/dash dashboard/fifa_soccer_players.csv')
 
 avg_age = soccer['age'].mean()
 avg_height = soccer['height_cm'].mean()
-avg_weight = soccer['weight-kg'].mean()
+avg_weight = soccer['weight_kg'].mean()
 
 navbar = dbc.NavbarSimple(
     brand='Soccer Players Dashboard',
@@ -40,7 +40,7 @@ app.layout = html.Div([
             ],
             body=True,
             style={'textAlign':'center', 'color':'white'},
-            color='ligthblue'
+            color='lightblue'
             )
         ),
         dbc.Col(
